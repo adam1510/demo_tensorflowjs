@@ -8,7 +8,7 @@ var size = [];
 
 
 async function run() {
-    // We want to predict the column "medv", which represents a median value of
+    // We want to predict the column "size", which represents a median value of
     // a home (in $1000s), so we mark it as a label.
     const csvDataset = tf.data.csv(
         csvUrl, {
@@ -57,7 +57,7 @@ async function run() {
     // Fit the model using the prepared Dataset
 
     let option = {
-        epochs: 10,
+        epochs: 99,
         validationSplit: 0.1,
         shuffle: true
     }
